@@ -9,6 +9,3 @@ Se encontro un error en la version productiva
 
 #modificacion A
 cambio en la rama feature/nueva-funcionalidad
-
-#modificacion B
-cambio en la rama feature/nueva-funcionalidad
