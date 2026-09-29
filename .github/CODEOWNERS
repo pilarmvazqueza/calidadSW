@@ -1,0 +1,14 @@
+#Responsables por defecto: revisan todo el repositorio
+@ernesolorzano
+@Curnaleo
+@pilarmvazqueza
+@guillefornari
+
+#El pipeline de CI lo revisa:
+/.github/ @pilarmvazqueza
+
+#El codigo fuente lo revisan todos los integrantes
+/src/ @ernesolorzano @Curnaleo @pilarmvazqueza @guillefornari
+
+#La documentacion
+README.md @ernesolorzano @Curnaleo @pilarmvazqueza @guillefornar
