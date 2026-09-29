@@ -10,3 +10,6 @@ Se realizo una segunda prueba de merge, pero esta vez por linea de comandos.
 #3er prueba
 nuevo pull request
 
+#4ta prueba
+Nueva prueba de PR con comandos.
+
