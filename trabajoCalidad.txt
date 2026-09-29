@@ -1,5 +1,2 @@
 #1er cambio
 Se realiza un cambio.
-
-#2do cambio para release
-se realizo una prueba
