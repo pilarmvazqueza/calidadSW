@@ -19,13 +19,6 @@ jobs:
       - name: List files
         run: ls -la
 
-      # Paso 3: Verificar que existe el archivo txt
-      - name: Check text file
-        run: |
-          if [ -f "archivo.txt" ]; then
-            echo "El archivo existe"
-            cat archivo.txt
-          else
-            echo "El archivo no existe"
-            exit 1
-          fi
+      # Paso 3: Mensaje de prueba
+      - name: Print test message
+        run: echo "Este es un mensaje de prueba desde GitHub Actions"
