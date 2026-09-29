@@ -13,3 +13,5 @@ nuevo pull request
 #4ta prueba
 Nueva prueba de PR con comandos.
 
+# ajustes finales / bump de versión
+Versión actual: 1.1.0
