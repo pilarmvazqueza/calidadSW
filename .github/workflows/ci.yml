@@ -1,21 +1,31 @@
-name: ci
-
+name: CI Demo
 
 on:
-  pull_request:
   push:
-    branches: [main, develop]
-
+    branches: [ "main" ]
+  pull_request:
+    branches: [ "main" ]
 
 jobs:
-  build-and-test:
+  build:
     runs-on: ubuntu-latest
 
-
     steps:
-      - name: Descargar el codigo
-        uses: actions/checkout@v4
+      # Paso 1: Clonar el repo
+      - name: Checkout repository
+        uses: actions/checkout@v3
 
+      # Paso 2: Mostrar contenido del repo
+      - name: List files
+        run: ls -la
 
-      - name: Compilar y correr tests
-        run: mvn -B verify
+      # Paso 3: Verificar que existe el archivo txt
+      - name: Check text file
+        run: |
+          if [ -f "archivo.txt" ]; then
+            echo "El archivo existe"
+            cat archivo.txt
+          else
+            echo "El archivo no existe"
+            exit 1
+          fi
