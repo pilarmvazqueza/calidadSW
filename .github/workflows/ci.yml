@@ -13,7 +13,7 @@ jobs:
 
 
     steps:
-      - name: Descargar el código
+      - name: Descargar el codigo
 	uses: actions/checkout@v4
 
       
