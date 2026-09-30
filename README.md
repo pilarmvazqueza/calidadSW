@@ -26,3 +26,5 @@ Qué nos ofrece GitHub para esto:
     -ranch protection rules: exigen que el PR tenga reviews aprobados y CI en verde antes de poder mergear, evitando que un cambio externo entre sin control.
 
   
+Link para el documento de google: 
+https://docs.google.com/document/d/1IqzcuNIOCA5Rv53jSyKNfEWEjn03xnCVGFyP32EZtrs/edit?tab=t.0
