@@ -1,17 +1,9 @@
-# calidadSW
-Paso b de la consigna 4:
-  Creamos un branch llamado prueba en local y después la subimos al repo en la nube.
-  EL paso siguiente sera hacer un "Pull Request" hacia Main.
-
-
-#2da prueba
-Se realizo una segunda prueba de merge, pero esta vez por linea de comandos.
-
-#3er prueba
-nuevo pull request
-
-#4ta prueba
-Nueva prueba de PR con comandos.
-
-# ajustes finales / bump de versión
-Versión actual: 1.1.0
+Se sugiere versionar el README.md en la raíz del repositorio con:
+  -Nombre y descripción del proyecto: qué hace el software, contexto del caso de estudio. 
+  -Stack tecnológico: lenguaje, framework, versión de JDK/Node/etc. 
+  -Cómo levantar el entorno: requisitos previos, comandos de instalación (mvn install, npm install), variables de entorno necesarias. 
+  -Cómo correr el proyecto localmente y cómo correr los tests. 
+  -Estructura de carpetas relevante. -Convención de ramas usada (Gitflow: main, develop, feature/, release/, hotfix/) y convención de commits/mensajes. 
+  -Cómo contribuir: pasos para levantar una rama, abrir un PR, a quién pedir review (referencia a CODEOWNERS). -Estado del CI: badge del workflow de GitHub Actions.
+  -Changelog / versión actual (o referencia a los tags de release).
+  
