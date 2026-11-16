@@ -1,24 +1,25 @@
-name: CI Demo
+name: CI - Compilación y Tests Maven
 
 on:
   push:
-    branches: [ "main", "develop" ]
+    branches: [ main, develop ]
   pull_request:
-    branches: [ "main", "develop" ]
+    branches: [ main, develop ]
 
 jobs:
-  build:
+  build-and-test:
     runs-on: ubuntu-latest
 
     steps:
-      # Paso 1: Clonar el repo
-      - name: Checkout repository
-        uses: actions/checkout@v3
+      - name: Descargar el código del repositorio
+        uses: actions/checkout@v4
 
-      # Paso 2: Mostrar contenido del repo
-      - name: List files
-        run: ls -la
+      - name: Configurar Java 17
+        uses: actions/setup-java@v4
+        with:
+          java-version: '17'
+          distribution: 'temurin'
+          cache: maven
 
-      # Paso 3: Mensaje de prueba
-      - name: Print test message
-        run: echo "Este es un mensaje de prueba desde GitHub Actions"
+      - name: Compilar y ejecutar tests unitarios
+        run: mvn -B test
