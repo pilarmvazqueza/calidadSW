@@ -32,4 +32,9 @@ class CalculadoraDescuentosTest {
         assertTrue(calc.esAptoCuponBienvenida(15000.0, true));
         assertFalse(calc.esAptoCuponBienvenida(15000.0, false));
     }
+
+    @Test
+    void testAplicarDescuentoPrecioNegativoLanzaExcepcion() {
+        assertThrows(IllegalArgumentException.class, () -> calc.aplicarDescuento(-100.0, 10.0));
+    }
 }
