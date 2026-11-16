@@ -24,6 +24,9 @@ public class CalculadoraDescuentos {
     }
 
     public boolean esAptoCuponBienvenida(double montoCompra, boolean esPrimeraCompra) {
+        if (montoCompra < 0) {
+            throw new IllegalArgumentException("El monto de compra no puede ser negativo");
+        }
         return esPrimeraCompra && montoCompra >= 10000;
     }
 }
