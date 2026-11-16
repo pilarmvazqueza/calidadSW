@@ -37,4 +37,9 @@ class CalculadoraDescuentosTest {
     void testAplicarDescuentoPrecioNegativoLanzaExcepcion() {
         assertThrows(IllegalArgumentException.class, () -> calc.aplicarDescuento(-100.0, 10.0));
     }
+
+    @Test
+    void testEsAptoCuponBienvenidaMontoNegativoLanzaExcepcion() {
+        assertThrows(IllegalArgumentException.class, () -> calc.esAptoCuponBienvenida(-5000.0, true));
+    }
 }
