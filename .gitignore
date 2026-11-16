@@ -1,2 +1,18 @@
-#todos los archivos que comiencen por prueba 
-prueba*
+#correccion tp:
+# Compilación de Maven
+target/
+*.class
+*.jar
+
+# Configuraciones locales de IDEs
+.idea/
+*.iml
+.vscode/
+.settings/
+.project
+.classpath
+
+# Sistema operativo y entorno local
+.DS_Store
+Thumbs.db
+.env
