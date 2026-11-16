@@ -16,8 +16,8 @@ public class CalculadoraDescuentos {
         if (subtotal < 0 || costoEnvio < 0) {
             throw new IllegalArgumentException("Los montos no pueden ser negativos");
         }
-        // Envío gratis a partir de $50000 (Bug intencional para el hotfix: usa > en vez de >=)
-        if (subtotal > 50000) {
+        // Envío gratis a partir de $50000 (Bug intencional para el hotfix: usa > en vez de >=) (arreglado)
+        if (subtotal >= 50000) {
             return subtotal;
         }
         return subtotal + costoEnvio;
