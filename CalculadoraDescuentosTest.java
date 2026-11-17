@@ -42,4 +42,9 @@ class CalculadoraDescuentosTest {
     void testEsAptoCuponBienvenidaMontoNegativoLanzaExcepcion() {
         assertThrows(IllegalArgumentException.class, () -> calc.esAptoCuponBienvenida(-5000.0, true));
     }
+
+    @Test
+    void testCalcularCuotaSinInteres() {
+        assertEquals(2500.0, calc.calcularCuotaSinInteres(15000.0, 6), 0.001);
+    }
 }

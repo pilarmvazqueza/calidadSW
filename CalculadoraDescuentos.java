@@ -29,4 +29,14 @@ public class CalculadoraDescuentos {
         }
         return esPrimeraCompra && montoCompra >= 10000;
     }
+
+    public double calcularCuotaSinInteres(double montoTotal, int cantidadCuotas) {
+        if (montoTotal < 0) {
+            throw new IllegalArgumentException("El monto total no puede ser negativo");
+        }
+        if (cantidadCuotas <= 0) {
+            throw new IllegalArgumentException("La cantidad de cuotas debe ser mayor a cero");
+        }
+        return montoTotal / cantidadCuotas;
+    }
 }
